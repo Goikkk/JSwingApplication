@@ -1,0 +1,24 @@
+2020-05-02 11:13:40,881  INFO [main] - com.company.Main.main 16 - Start MainFrame.
+2020-05-02 11:14:20,044  INFO [main] - com.company.Main.main 16 - Start MainFrame.
+2020-05-02 11:14:58,750  INFO [main] - com.company.Main.main 16 - Start MainFrame.
+2020-05-02 11:15:40,737  INFO [main] - com.company.Main.main 16 - Start MainFrame.
+2020-05-02 11:15:45,874 ERROR [AWT-EventQueue-0] - com.company.Main.ok 243 - java.lang.NumberFormatException: empty String
+2020-05-02 11:17:41,712  INFO [main] - com.company.Main.main 16 - Start MainFrame.
+2020-05-02 11:18:27,141  INFO [main] - com.company.Main.main 16 - Start MainFrame.
+2020-05-02 11:18:56,614  INFO [main] - com.company.Main.main 16 - Start MainFrame.
+2020-05-02 11:19:09,901 ERROR [AWT-EventQueue-0] - com.company.Main.ok 243 - java.lang.NumberFormatException: empty String
+2020-05-02 11:21:38,227  INFO [main] - com.company.Main.main 16 - Start MainFrame.
+2020-05-02 11:39:41,262  INFO [main] - com.company.Main.main 16 - Start MainFrame.
+2020-05-02 11:42:12,541  INFO [main] - com.company.Main.main 16 - Start MainFrame.
+2020-05-02 11:47:03,327  INFO [main] - com.company.Main.main 16 - Start MainFrame.
+2020-05-02 18:20:22,873  INFO [main] - com.company.Main.main 16 - Start MainFrame.
+2020-05-02 18:21:10,199  INFO [main] - com.company.Main.main 16 - Start MainFrame.
+2020-05-02 18:25:10,027  INFO [main] - com.company.Main.main 16 - Start MainFrame.
+2020-05-02 18:27:01,146  INFO [main] - com.company.Main.main 16 - Start MainFrame.
+2020-05-02 18:27:43,573  INFO [main] - com.company.Main.main 16 - Start MainFrame.
+2020-05-02 18:28:27,376  INFO [main] - com.company.Main.main 16 - Start MainFrame.
+2020-05-02 18:28:35,099  INFO [main] - com.company.Main.main 16 - Start MainFrame.
+2020-05-02 18:30:17,624  INFO [main] - com.company.Main.main 16 - Start MainFrame.
+2020-05-02 18:30:39,974  INFO [main] - com.company.Main.main 16 - Start MainFrame.
+2020-05-02 18:31:34,479  INFO [main] - com.company.Main.main 16 - Start MainFrame.
+2020-05-02 18:32:55,557  INFO [main] - com.company.Main.main 16 - Start MainFrame.

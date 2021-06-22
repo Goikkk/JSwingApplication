@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<project name="Project Name" default="main" basedir=".">
+
+    <!-- Sets variables which can later be used. -->
+    <property name="src.dir" location="src" />
+    <property name="build.dir" location="bin" />
+    <property name="dist.dir" location="dist" />
+    <property name="doc.dir" location="doc" />
+    <property name="lib.dir" location=".;lib\jcalendar-1.4.jar;lib\jcommon-1.0.8.jar;lib\jfreechart.jar;lib\l2fprod-common-buttonbar.jar;lib\l2fprod-common-totd-6.9.1.jar;lib\log4j-1.2.11.jar"/>
+
+    <path id="classpath">
+        <fileset dir="lib" includes="*.jar"/>
+    </path>
+
+    <!-- Deletes the existing build, docs and dist directory-->
+    <target name="clean">
+        <delete dir="${build.dir}" />
+        <delete dir="${doc.dir}" />
+        <delete dir="${dist.dir}" />
+    </target>
+
+    <!-- Creates the  build, docs and dist directory-->
+    <target name="makedir">
+        <mkdir dir="bin" />
+        <mkdir dir="doc" />
+        <mkdir dir="dist" />
+    </target>
+
+    <!-- Compiles the java code -->
+    <target name="compile" depends="clean, makedir">
+        <javac srcdir="${src.dir}" destdir="${build.dir}" classpathref="classpath">
+        </javac>
+    </target>
+
+    <!-- Creates Javadoc -->
+    <target name="docs" depends="compile">
+        <javadoc sourcepath="${src.dir}" classpath="${lib.dir}" destdir="doc">
+            <fileset dir="${src.dir}\com\company\" >
+            </fileset>
+        </javadoc>
+    </target>
+
+    <!--Creates the deployable jar file-->
+    <target name="jar" depends="compile">
+        <jar destfile="${dist.dir}\Aplikacja.jar" basedir="bin\com\company">
+            <!--  <fileset dir="" includes="*.jar"/>  -->
+            <manifest>
+                <attribute name="Main-Class" value="\bin\com\company\Main"/>
+                <attribute name="Class-Path" value="${lib.dir}" />
+            </manifest>
+        </jar>
+    </target>
+
+
+    <target name="main" depends="compile, jar, docs">
+        <description>Main target</description>
+    </target>
+
+</project>
